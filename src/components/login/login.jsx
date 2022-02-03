@@ -3,9 +3,11 @@ import React from 'react';
 import { Card, Form , LargeCard, Nav, Sign} from '../signUp/signUpstyle';
 import SIgnicon from "../login.svg"
 import logo from "../Microphone.svg"
+import { useNavigate } from 'react-router-dom';
 
 
 export const Login = ()=>{
+    const navigate = useNavigate()
     return(
         <Sign>
             <Nav>
@@ -21,7 +23,7 @@ export const Login = ()=>{
                 <input type="email" required />
                 <label>Password :</label>
                 <input type="password" required />
-                <button>Login</button>
+                <button onClick={()=>navigate("/dashboard")}>Login</button>
                 <a href='/verifyemail'>Forgot password?</a>
             </Form>
             </LargeCard>

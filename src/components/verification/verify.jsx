@@ -11,7 +11,7 @@ export const Verify = ()=>{
             <Nav>
             <span><img src={logo} alt='TheVoice logo' />
                 <h3>TheVoice</h3></span>
-                <Card>Don't hve an account ?</Card>
+                <Card href='/'>Don't hve an account ?</Card>
             </Nav>
             <LargeCard>
                 <img src={SIgnicon} alt='verification image' />

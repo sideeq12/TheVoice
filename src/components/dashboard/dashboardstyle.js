@@ -14,7 +14,7 @@ export const Menu = styled.div`
         display: flex;
         gap: 1rem;
         align-items: center;
-        padding-left: 28px;
+        padding-left: 38px;
         label{
             margin-top: -15px;
             img{
@@ -33,16 +33,40 @@ export const Menu = styled.div`
         width: 100vw;
         position: fixed;
         bottom: 0;
-        height: 10vh;
+        height: fit-content;
         padding-top: 0px;
+        margin-bottom: ${(props)=> props.stat ? "-185px" : "0px"};
+        transition: .5s;
+        span{
+            svg{
+            display: none;
+        }
+        }
+    }
+    span{
+        margin-bottom: 20px;
+        margin-top: 20px;
+        
     }
 `
+export const Icon = styled.div`
+    display: none;
 
+    @media (max-width : 940px){
+        display: block;
+        border: 1px solid red;
+        position:fixed;
+        right: 0;
+        bottom: 0;
+        margin-right: 10vw;
+        margin-bottom: 15px;
+    }
+`
 export const MenuLink = styled.ul`
     margin-top: 100px;
     display: flex;
     flex-direction: column;
-    gap: 1rem;
+    gap: 2rem;
     width : 254px;
     align-items : left;
 
@@ -51,7 +75,7 @@ export const MenuLink = styled.ul`
         color: white;
         list-style: none;
         display: flex;
-        padding-left: 20px;
+        padding-left: 30px;
         width: 90%;
         margin-left: -30px;
         label{
@@ -61,9 +85,7 @@ export const MenuLink = styled.ul`
     }
     li:hover{
         width: 80%;
-        padding-left: 20px;
-        padding-top: 5px;
-        padding-bottom: 5px;
+        padding  : 10px 0px 10px 20px;
         transition: .1s;
         cursor: pointer;
         border-radius: 5px;
@@ -73,7 +95,29 @@ export const MenuLink = styled.ul`
     @media (max-width : 940px) {
         flex-direction: row;
         margin-top: 0px;
-        width: 100vh;
+        height: fit-content;
+        width: 100vw;
+        flex-wrap: wrap;
+
+
+        li{
+            font-size: small;
+            width: 30vw;
+            display: flex;
+            flex-direction: column;
+            padding-left: 0px;
+        }
+        li a{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap : 0.3rem
+        }
+        li:hover{
+            width : 30vw;
+            padding : 0px
+        }
     }
     
 `
