@@ -10,6 +10,7 @@ import { Login } from './components/login/login'
 import { Verify } from './components/verification/verify'
 import { Update } from './components/update/update'
 import { Dashboard } from './components/dashboard/dashboard'
+import { Profile } from './components/dashboard/profile/profile'
 
 
 const App =()=> {
@@ -33,6 +34,7 @@ useEffect(()=>{
          <Route path="/verify" element={<Verify />} />
          <Route path="/verifyemail" element={<Update/> } />
          <Route path="/dashboard" element={<Dashboard />} />
+         <Route path="/profile" element={<Profile />} />
        </Routes>
      </Router>
      {/* <Verify /> */}
