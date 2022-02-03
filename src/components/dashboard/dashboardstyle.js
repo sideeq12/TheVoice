@@ -146,23 +146,23 @@ export const MenuLink = styled.ul`
 export const Details = styled.div`
     padding-top: 50px;
     width: 80vw;
-    background-color: orange;
     padding-left: 30px;
 `
 export const UpperLayer = styled.div`
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    gap : 1rem;
+    gap : 2rem;
 `
 export const Tsearch = styled.div`
     background: white;
-    border: 2px solid green;
+    border: 1px solid rgba(0, 128, 0, 0.541);
     border-radius: 5px;
     display: flex;
     width :300px;
     padding: 5px 10px;
     margin-bottom: 40px;
+    gap : 1rem;
     input{
         border : none;
         width : 350px;
@@ -213,6 +213,128 @@ export const Jumbotron = styled.div`
     }
 `
 export const Latest = styled.div`
-    background: white;
-    border-radius: ;
+    text-align: left;
+    color : #081C15;
+    margin-top: -40px;
+    h4{
+        font-size: 15px;
+    }
+    label{
+        color : rgba(0, 0, 0, 0.455);
+        font-size: small;
+    }
+    div{
+        border : none;
+        box-shadow: -2px 2px 6px 0px rgba(0,0,0,0.75);
+        border-radius: 5px;
+        display: flex;
+        flex-direction: column;
+        gap: 0.2rem;
+        padding : 10px;
+
+        p{
+            margin-top: 10px;
+            progress[value]::-webkit-progress-value {
+                color : green;
+                /* background-color: #eee;
+                border-radius: 2px;
+                box-shadow: 0 2px 5px rgba(0, 0, 0, 0.25) inset;
+                width: 80%;
+                height: 10px; */
+                background: green;
+}
+        }
+    }
 `
+
+export const Downlist = styled.div`
+    width : 100%;
+    margin-top: 30px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 2rem;
+`
+export const Active = styled.div`
+    width : 65%;
+    height: fit-content;
+
+    span{
+        display: flex;
+        justify-content: space-between;
+        padding: 5px 10px;
+        margin-bottom: 15px;
+    }
+  
+    div{
+        width: 100%;
+        display: flex;
+        gap: 2rem;
+        div{
+        width : 45%;
+        flex-direction: column;
+        height: fit-content;
+        padding : 15px;
+        box-shadow: -2px 2px 6px 0px rgba(0,0,0,0.75);
+        border-radius: 5px;
+        label{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            padding-right: 10px;
+            p{
+                font-size: small;
+                h4{
+                    margin-left: -45px;
+                    margin-top: 0px;
+                }
+            }
+            svg{
+                margin-top: 15px;
+            }
+        }
+        span{
+            padding: 0px;
+        }
+    }
+   
+    }
+`
+export const Previous = styled.div`
+    width: 30%;
+    border : 1px solid black;
+`
+export const List = styled.ul`
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    li{
+        list-style: none;
+        width : 110%;
+        margin-left: -30px;
+        display: flex;
+        gap: 1rem;
+        height: 80px;
+        font-size: small;
+
+        img{
+            height: 75px;
+            width: 75px;
+            border-radius: 50%;
+        }
+    }
+`
+export const Desc = styled.div`
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    text-align: left;
+    span{
+        color : green;
+        margin: 2px;
+    }
+    label{
+        font-size: smaller;
+        color : rgba(0, 0, 0, 0.555);
+    }
+    `

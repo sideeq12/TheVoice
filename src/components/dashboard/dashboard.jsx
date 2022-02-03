@@ -1,10 +1,11 @@
 import React, {useState} from 'react';
-import { Menu ,Icon, Layer, MenuLink, SmallMenu, Details, UpperLayer, Jumbotron, Tsearch} from './dashboardstyle';
+import { Menu ,Icon, Layer, MenuLink, SmallMenu, Details, UpperLayer, Jumbotron, Tsearch, Latest, Downlist, Active, Previous, List, Desc} from './dashboardstyle';
 import Micro from "../Microphone.svg"
 import menu from "./menu.png"
 import close from "./close.png"
 import { Input } from '../signUp/signUpstyle';
 import jumbocard from "./explore.svg"
+import amosun from "./ibikunle.jpg"
 
 
 export const Dashboard = ()=>{
@@ -66,7 +67,9 @@ export const Dashboard = ()=>{
            </Menu>
            <Details>
              <Tsearch>
-               icon <input type="text" placeholder='Search for latest project...'/>
+             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+  <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
+</svg> <input type="text" placeholder='Search for latest project...'/>
              </Tsearch>
              <UpperLayer>
                <Jumbotron>
@@ -78,7 +81,67 @@ export const Dashboard = ()=>{
                    <button>Get started</button>
                  </div>
                </Jumbotron>
+               <Latest>
+                 <h4>Today's Rating</h4>
+                 <p>Heighest rating -Oyo state</p>
+                 <div>
+                   <label>Project time - 6months</label>
+                   <text>Bore hole project</text>
+                   <label>64 voices</label>
+                   <p><progress id="file" value="78" max="100"> 32% </progress> <label>78/100</label></p>
+                 </div>
+               </Latest>
              </UpperLayer>
+
+             <Downlist>
+               <Active>
+                <span>Active list <a>See all</a></span>
+                <div>
+                  <div>
+                    <label><p>
+                    Project time budget - 8months
+                      <h4>Express construction</h4></p> <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="green" class="bi bi-signpost-2-fill" viewBox="0 0 16 16">
+  <path d="M7.293.707A1 1 0 0 0 7 1.414V2H2a1 1 0 0 0-1 1v2a1 1 0 0 0 1 1h5v1H2.5a1 1 0 0 0-.8.4L.725 8.7a.5.5 0 0 0 0 .6l.975 1.3a1 1 0 0 0 .8.4H7v5h2v-5h5a1 1 0 0 0 1-1V8a1 1 0 0 0-1-1H9V6h4.5a1 1 0 0 0 .8-.4l.975-1.3a.5.5 0 0 0 0-.6L14.3 2.4a1 1 0 0 0-.8-.4H9v-.586A1 1 0 0 0 7.293.707z"/>
+</svg>
+                    </label> 
+                    <p><progress id="file" value="78" max="100"> 32% </progress>78/100</p>
+                
+                  </div>
+                  <div>
+                    <label><p>
+                    Project time budget - 8months
+                      <h4>Express construction</h4></p> <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="green" class="bi bi-signpost-2-fill" viewBox="0 0 16 16">
+  <path d="M7.293.707A1 1 0 0 0 7 1.414V2H2a1 1 0 0 0-1 1v2a1 1 0 0 0 1 1h5v1H2.5a1 1 0 0 0-.8.4L.725 8.7a.5.5 0 0 0 0 .6l.975 1.3a1 1 0 0 0 .8.4H7v5h2v-5h5a1 1 0 0 0 1-1V8a1 1 0 0 0-1-1H9V6h4.5a1 1 0 0 0 .8-.4l.975-1.3a.5.5 0 0 0 0-.6L14.3 2.4a1 1 0 0 0-.8-.4H9v-.586A1 1 0 0 0 7.293.707z"/>
+</svg>
+                    </label> 
+                    <p><progress id="file" value="78" max="100"> 32% </progress>78/100</p>
+                
+                  </div>
+                </div>
+               </Active>
+               <Previous>
+                 <h3>Previous ratings</h3>
+                 <List>
+                   <li><img src={amosun} />
+                   <Desc>
+                     <span>Senator Ibikunle Amosun</span>
+                     <label>Name of the project</label>
+                     <progress id="file" value="78" max="100"> 32% </progress>
+                     <label>1 hour ago</label>
+                   </Desc>
+                   </li>
+                   <li><img src={amosun} />
+                   <Desc>
+                     <span>Senator Ibikunle Amosun</span>
+                     <label>Name of the project</label>
+                     <progress id="file" value="78" max="100"> 32% </progress>
+                     <label>1 hour ago</label>
+                   </Desc>
+                   </li>
+                   
+                   </List>
+               </Previous>
+             </Downlist>    
            </Details>
            </Layer>
     )
