@@ -1,7 +1,7 @@
 
 import React from 'react';
 import { Card, Form , LargeCard, Nav, Sign} from '../signUp/signUpstyle';
-import SIgnicon from "../sign.svg"
+import SIgnicon from "../login.svg"
 
 
 export const Update = ()=>{
@@ -9,7 +9,7 @@ export const Update = ()=>{
         <Sign>
             <Nav>
                 <span>Logo</span>
-                <Card>Create an account</Card>
+                <Card>Create new password</Card>
             </Nav>
             <LargeCard>
             <img src={SIgnicon} alt='login THeVoice image' />

@@ -1,5 +1,5 @@
 import React from 'react';
-import SIgnicon from "../sign.svg"
+import SIgnicon from "../register.svg"
 import { Card, Form, LargeCard, Nav, Sign } from './signUpstyle';
 
 export const SignUp = ()=>{

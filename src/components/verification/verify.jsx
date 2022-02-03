@@ -1,6 +1,6 @@
 import React from 'react';
 import { Card, Form, Input, LargeCard, Nav, Sign } from '../signUp/signUpstyle';
-import SIgnicon from "../sign.svg"
+import SIgnicon from "../register.svg"
 
 export const Verify = ()=>{
     return(
