@@ -2,14 +2,16 @@
 import React from 'react';
 import { Card, Form , LargeCard, Nav, Sign} from '../signUp/signUpstyle';
 import SIgnicon from "../login.svg"
+import logo from "../Microphone.svg"
 
 
 export const Login = ()=>{
     return(
         <Sign>
             <Nav>
-                <span>Logo</span>
-                <Card>Create an account</Card>
+            <span><img src={logo} alt='TheVoice logo' />
+                <h3>TheVoice</h3></span>
+                <Card href='/'>Create an account</Card>
             </Nav>
             <LargeCard>
             <img src={SIgnicon} alt='login THeVoice image' />
@@ -20,7 +22,7 @@ export const Login = ()=>{
                 <label>Password :</label>
                 <input type="password" required />
                 <button>Login</button>
-                <a href='#'>Forgot password?</a>
+                <a href='/verifyemail'>Forgot password?</a>
             </Form>
             </LargeCard>
         </Sign>

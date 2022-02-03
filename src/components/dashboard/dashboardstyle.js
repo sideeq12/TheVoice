@@ -9,6 +9,21 @@ export const Menu = styled.div`
     width: 254px;
     height: 100vh;
     padding-top: 50px;
+    span{
+        color: white;
+        display: flex;
+        gap: 1rem;
+        align-items: center;
+        padding-left: 28px;
+        label{
+            margin-top: -15px;
+            img{
+            width: 30px;
+            margin-bottom: -10px;
+            margin-right: -10px;
+        }
+        }
+    }
     a{
         color: white;
         text-decoration: none;

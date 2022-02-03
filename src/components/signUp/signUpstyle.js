@@ -13,14 +13,30 @@ export const Nav = styled.nav`
     display: flex;
     justify-content: space-between;
     align-items: center;
+    span{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        img{
+            width: 40px;
+        }
+        h3{
+            margin-left: -10px;
+            margin-bottom: -15px;
+            font-size: 20px;
+            height: fit-content;
+        }
+    }
 `
 
-export const Card = styled.div`
+export const Card = styled.a`
     background-color: #D8F3DC;
     border-radius: 8px;
     color: green;
     padding: 15px 30px;
     font-size: small;
+    text-decoration: none;
 `
 export const Input = styled.div`
     input{

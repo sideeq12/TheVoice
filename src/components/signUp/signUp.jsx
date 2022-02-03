@@ -1,13 +1,17 @@
 import React from 'react';
+import { useNavigate } from 'react-router-dom';
 import SIgnicon from "../register.svg"
 import { Card, Form, LargeCard, Nav, Sign } from './signUpstyle';
+import logo from "../Microphone.svg"
 
 export const SignUp = ()=>{
+    const navigate = useNavigate()
     return(
        <Sign>
             <Nav>
-                <span>Logo section</span>
-                <Card>
+            <span><img src={logo} alt='TheVoice logo' />
+                <h3>TheVoice</h3></span>
+                <Card href='login'>
                     Already have an account
                 </Card>
             </Nav>
@@ -25,7 +29,7 @@ export const SignUp = ()=>{
                     <input type="password" required/>
                     <label>Confirm password :</label>
                     <input type="password" />
-                    <button type='submit'>Register</button>
+                    <button type='submit' onClick={()=>navigate("/verify")}>Register</button>
                 </Form>
             </LargeCard>
        </Sign>

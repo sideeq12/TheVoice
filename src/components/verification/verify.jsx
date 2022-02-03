@@ -1,12 +1,16 @@
 import React from 'react';
 import { Card, Form, Input, LargeCard, Nav, Sign } from '../signUp/signUpstyle';
 import SIgnicon from "../register.svg"
+import logo from "../Microphone.svg"
+import { useNavigate } from 'react-router-dom';
 
 export const Verify = ()=>{
+    const navigate = useNavigate()
     return(
         <Sign>
             <Nav>
-                <span>TheVoice</span>
+            <span><img src={logo} alt='TheVoice logo' />
+                <h3>TheVoice</h3></span>
                 <Card>Don't hve an account ?</Card>
             </Nav>
             <LargeCard>
@@ -22,7 +26,7 @@ export const Verify = ()=>{
                     <input type="text" />
                     <input type="text" />
                     </Input>
-                    <button>Verify</button>
+                    <button onClick={()=> navigate("/dashboard")}>Verify</button>
                 </Form>
             </LargeCard>
         </Sign>
