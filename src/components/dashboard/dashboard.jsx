@@ -127,7 +127,7 @@ export const Dashboard = ()=>{
                      <span>Senator Ibikunle Amosun</span>
                      <label>Name of the project</label>
                      <progress id="file" value="78" max="100"> 32% </progress>
-                     <label>1 hour ago</label>
+                     <label>1 hour ago </label>
                    </Desc>
                    </li>
                    <li><img src={amosun} />
