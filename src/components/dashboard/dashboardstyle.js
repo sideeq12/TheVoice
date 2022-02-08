@@ -177,7 +177,7 @@ export const Tsearch = styled.div`
 `
 
 export const Jumbotron = styled.div`
-    width: 65%;
+    width: 62%;
     background-color: #D8F3DC;
     border-radius: 15px;
     display: flex;
@@ -215,7 +215,9 @@ export const Jumbotron = styled.div`
 export const Latest = styled.div`
     text-align: left;
     color : #081C15;
-    margin-top: -40px;
+    margin-top: -40px; 
+    /* border: 1px solid red; */
+    width: 28%;
     h4{
         font-size: 15px;
     }
@@ -258,6 +260,7 @@ export const Downlist = styled.div`
 export const Active = styled.div`
     width : 65%;
     height: fit-content;
+    /* border: 1px solid red; */
 
     span{
         display: flex;
@@ -337,4 +340,25 @@ export const Desc = styled.div`
         font-size: smaller;
         color : rgba(0, 0, 0, 0.555);
     }
+    progress {
+        /* display: n; */
+  border-radius: 7px; 
+  width: 80%;
+  height: 5px;
+  /* margin-left: -11.5%; */
+  /* background-color: green; */
+  color : green;
+  box-shadow: 1px 1px 4px rgba( 0, 0, 0, 0.2 );
+}
+progress::-webkit-progress-bar {
+  background-color: green;
+  color : green;
+  border-radius: 7px;
+}
+progress::-webkit-progress-value {
+  background-color: green;
+  color : green;
+  border-radius: 7px;
+  box-shadow: 1px 1px 5px 3px rgba( 255, 0, 0, 0.8 );
+}
     `
