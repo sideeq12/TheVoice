@@ -125,7 +125,7 @@ export const Dashboard = ()=>{
                    <li><img src={amosun} />
                    <Desc>
                      <span>Senator Ibikunle Amosun</span>
-                     <label>Name of the project</label>
+                     <label>Name of the projects</label>
                      <progress id="file" value="78" max="100"> 32% </progress>
                      <label>1 hour ago </label>
                    </Desc>
