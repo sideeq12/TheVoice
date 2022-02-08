@@ -4,7 +4,7 @@ import Micro from "../Microphone.svg"
 import menu from "./menu.png"
 import close from "./close.png"
 import { Input } from '../signUp/signUpstyle';
-import jumbocard from "./explore.svg"
+import jumbocard from "./likeproject.svg"
 import amosun from "./ibikunle.jpg"
 
 
