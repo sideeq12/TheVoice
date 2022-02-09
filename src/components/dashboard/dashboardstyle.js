@@ -1,7 +1,10 @@
 import styled from "styled-components";
+import makinde from "./makinde.jpg"
 
 export const Layer = styled.div`
     display: flex;
+    height: 100vh;
+    overflow-y: hidden;
     /* flex-wrap: wrap; */
 `
 export const SmallMenu = styled.div`
@@ -146,7 +149,10 @@ export const MenuLink = styled.ul`
 export const Details = styled.div`
     padding-top: 50px;
     width: 80vw;
+    height: 100vh;
+    overflow-y: scroll;
     padding-left: 30px;
+    padding-bottom: 30px;
 `
 export const UpperLayer = styled.div`
     display: flex;
@@ -216,7 +222,6 @@ export const Latest = styled.div`
     text-align: left;
     color : #081C15;
     margin-top: -40px; 
-    /* border: 1px solid red; */
     width: 28%;
     h4{
         font-size: 15px;
@@ -238,11 +243,6 @@ export const Latest = styled.div`
             margin-top: 10px;
             progress[value]::-webkit-progress-value {
                 color : green;
-                /* background-color: #eee;
-                border-radius: 2px;
-                box-shadow: 0 2px 5px rgba(0, 0, 0, 0.25) inset;
-                width: 80%;
-                height: 10px; */
                 background: green;
 }
         }
@@ -255,12 +255,17 @@ export const Downlist = styled.div`
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    gap: 3rem;
+    /* align-items: flex-start; */
+    gap: 1.5rem;
+    margin-bottom: 50px;
 `
 export const Active = styled.div`
-    width : 65%;
-    height: fit-content;
-    /* height: 700px; */
+    width : 68%;
+    padding-right: 10px;
+    height: 325px;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    
 
     span{
         display: flex;
@@ -270,10 +275,11 @@ export const Active = styled.div`
     }
   
     div{
+        padding-left: 5px;
         display: flex;
-        gap: 2rem;
+        gap: 1rem;
         div{
-        width : 45%;
+        width : 42%;
         flex-direction: column;
         height: fit-content;
         padding : 15px;
@@ -303,9 +309,9 @@ export const Active = styled.div`
     }
 `
 export const Previous = styled.div`
-    width: 28%;
+    width: 25%;
     /* border : 1px solid black; */
-    box-shadow: -2px 2px 6px 0px rgba(0,0,0,0.75);
+    /* box-shadow: -2px 2px 6px 0px rgba(0,0,0,0.75); */
     border-radius: 4px;
 `
 export const List = styled.ul`
@@ -366,10 +372,8 @@ progress::-webkit-progress-value {
 
 export const HeadCard = styled.div`
     padding: 10px;
-    border: 1px solid red;
+    margin-top: -20px;
     display: flex;
-    flex-direction: column;
-    /* gap : 1rem; */
     width: 100%;
     
 
@@ -377,39 +381,51 @@ export const HeadCard = styled.div`
         display: flex;
         flex-direction: column;
         margin-top: 75px;
-        /* justify-content: center; */
         align-items: center;
-        width : 30%;
-        /* gap: 0.2rem; */
-        border: 1px solid green;
-    }
-    label{
-        margin-top: -15px;
-        margin-bottom: 10px;
-        font-size: small;
-        color : #9C9C9C;
-        
-    }
-    h4{
-        margin-top: -1px;
-    }
-    img{
+        padding-bottom: 20px;
+        width : 35%;
+        box-shadow: 0px 2px 5px 0px rgba(0,0,0,0.98);
+        height: 200px;
+        border-radius: 5px;
+        gap: 0.5rem;
+
+        div{
         margin-top: -50px;
         border-radius: 100%;
         height: 75px;
         width: 75px;
-        margin-bottom: 10px;
-        border : 2px solid green;
+        margin-bottom: 15px;
+        padding: 5px;
+        /* opacity: 0.7; */
+        border: 1.23403px solid #D6D5D5;
+        img{
+            height: 100%;
+            width: 100%;
+            border-radius: 100%; 
+        }
+        }
     }
+    label{
+        margin-top: -30px;
+        margin-bottom: 10px;
+        font-size: small;
+        color : #9C9C9C;
+
+    }
+    h4{
+        margin-top: -1px;
+    }
+   
      a{
          color : #52B788;
+         text-decoration: none;
      }
      progress{
          color : green;
-         margin-top: -15px;
+         margin-top: -35px;
          margin-bottom: 5px;
      }
      span{
-         /* margin-top: -5px; */
+         font-size: 15px;
      }
 `
