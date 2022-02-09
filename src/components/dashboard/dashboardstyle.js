@@ -255,12 +255,12 @@ export const Downlist = styled.div`
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    gap: 2rem;
+    gap: 3rem;
 `
 export const Active = styled.div`
     width : 65%;
     height: fit-content;
-    /* border: 1px solid red; */
+    /* height: 700px; */
 
     span{
         display: flex;
@@ -270,7 +270,6 @@ export const Active = styled.div`
     }
   
     div{
-        width: 100%;
         display: flex;
         gap: 2rem;
         div{
@@ -304,8 +303,10 @@ export const Active = styled.div`
     }
 `
 export const Previous = styled.div`
-    width: 30%;
-    border : 1px solid black;
+    width: 28%;
+    /* border : 1px solid black; */
+    box-shadow: -2px 2px 6px 0px rgba(0,0,0,0.75);
+    border-radius: 4px;
 `
 export const List = styled.ul`
     display: flex;
@@ -362,3 +363,53 @@ progress::-webkit-progress-value {
   box-shadow: 1px 1px 5px 3px rgba( 255, 0, 0, 0.8 );
 }
     `
+
+export const HeadCard = styled.div`
+    padding: 10px;
+    border: 1px solid red;
+    display: flex;
+    flex-direction: column;
+    /* gap : 1rem; */
+    width: 100%;
+    
+
+    section{
+        display: flex;
+        flex-direction: column;
+        margin-top: 75px;
+        /* justify-content: center; */
+        align-items: center;
+        width : 30%;
+        /* gap: 0.2rem; */
+        border: 1px solid green;
+    }
+    label{
+        margin-top: -15px;
+        margin-bottom: 10px;
+        font-size: small;
+        color : #9C9C9C;
+        
+    }
+    h4{
+        margin-top: -1px;
+    }
+    img{
+        margin-top: -50px;
+        border-radius: 100%;
+        height: 75px;
+        width: 75px;
+        margin-bottom: 10px;
+        border : 2px solid green;
+    }
+     a{
+         color : #52B788;
+     }
+     progress{
+         color : green;
+         margin-top: -15px;
+         margin-bottom: 5px;
+     }
+     span{
+         /* margin-top: -5px; */
+     }
+`

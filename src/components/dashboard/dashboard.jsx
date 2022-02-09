@@ -1,7 +1,8 @@
 import React, {useState} from 'react';
-import { Menu ,Icon, Layer, MenuLink, SmallMenu, Details, UpperLayer, Jumbotron, Tsearch, Latest, Downlist, Active, Previous, List, Desc} from './dashboardstyle';
+import { Menu ,Icon, Layer, MenuLink, SmallMenu, Details, UpperLayer, Jumbotron, Tsearch, Latest, Downlist, Active, Previous, List, Desc, HeadCard} from './dashboardstyle';
 import Micro from "../Microphone.svg"
 import menu from "./menu.png"
+import makinde from "./makinde.jpg"
 import close from "./close.png"
 import { Input } from '../signUp/signUpstyle';
 import jumbocard from "./likeproject.svg"
@@ -118,6 +119,18 @@ export const Dashboard = ()=>{
                 
                   </div>
                 </div>
+                
+                <HeadCard>
+                  <section> 
+                    <img src={makinde} alt="" />
+                    <h4>Seyi Makinde</h4>
+                    <label> 2019-till present</label>
+                    <span>Rate level : Very High</span>
+                    <br/><progress id="file" value="100" max="100"> 32% </progress>
+                    <a href=''>View Profile</a>
+                  </section>
+                  
+                </HeadCard>
                </Active>
                <Previous>
                  <h3>Previous ratings</h3>
@@ -126,7 +139,7 @@ export const Dashboard = ()=>{
                    <Desc>
                      <span>Senator Ibikunle Amosun</span>
                      <label>Name of the projects</label>
-                     <progress id="file" value="78" max="100"> 32</progress>
+                     <progress id="file" value="78" max="100"> 32% </progress>
                      <label>1 hour ago </label>
                    </Desc>
                    </li>
